@@ -2,20 +2,16 @@ import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 /**
  * Created by mitchell on 30/10/16.
  */
 public class Steps {
 
-//    @Managed
-    //WebDriver dr = new ChromeDriver();
-   // System.setProperty("webdriver.gecko.driver","geckodriver.exe");
-   // DesiredCapabilities capabilities=DesiredCapabilities.firefox();
-   // capabilities.setCapability("marionette", true);
-    WebDriver dr = new ChromeDriver();
+    @Managed
+    WebDriver dr;
 
 
     @Given("^the user has logged into the hotel management platform$")
